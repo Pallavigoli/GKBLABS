@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GKB LABS</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<h1>User Details</h1>
+	<table border>
+
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email ID</th>
+				<th>Age</th>
+				<th>Data Of Brith</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user:${user}">
+				<td th:text="${user.name}"></td>
+				<td th:text="${user.email}"></td>
+				<td th:text="${user.age}"></td>
+				<td th:text="${user.dob}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

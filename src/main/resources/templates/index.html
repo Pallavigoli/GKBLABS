@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>GKB LABS</title>
+<link rel="stylesheet" href="/style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section class="container">
+		<div class="login-container">
+			<div class="circle circle-one"></div>
+			<div class="form-container">
+				<h1 class="opacity">User Details</h1>
+				<form action="UserDetails" method="post">
+					<input type="text" placeholder="User Name" name="name" required><br>
+					<input type="email" id="email" placeholder="Email ID" name="email" required><br>
+					<p class="opacity" id="alerting"></p>
+					<input type="number" id="age" placeholder="Age" name="age" min="0" max="100" required><br>
+					<input type="date" id="dob" placeholder="Date of birth" name="dob" required><br>
+					
+					<button type="submit">Submit</button>
+				</form>
+				
+			</div>
+			<div class="circle circle-two"></div>
+		</div>
+		<div class="theme-btn-container"></div>
+	</section>
+<script>
+	var check = document.getElementById("age")
+	check.addEventListener("click", fun);
+	function fun() {
+	const emailid = document.getElementById("email").value
+		if (emailid.endsWith("@gmail.com")) {
+			 document.getElementById("alerting").innerHTML = " ";
+		} else {
+			document.getElementById("alerting").innerHTML = "Please enter valid i.e @gmail.com"
+		}
+	}
+</script>
+
+
+</body>
+</html>
+
+
+
+
+

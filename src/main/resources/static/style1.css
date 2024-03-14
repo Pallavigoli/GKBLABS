@@ -1,0 +1,42 @@
+:root {
+  --background: #1a1a2e;
+  --color: #ffffff;
+  --primary-color: #0f3460;
+}
+h1 {
+   
+    text-align: center;
+    margin-top: 70px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "poppins";
+  background: var(--background);
+  color: var(--color);
+  letter-spacing: 1px;
+  transition: background 0.2s ease;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -ms-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:80px;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #cec9d6; /* Golden border for tables */
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #a3b6aa;/* Greenish background for table headers */
+    text-align: center;
+}
